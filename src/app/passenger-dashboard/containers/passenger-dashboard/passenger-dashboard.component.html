@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+      <div class="col-12 py-3 ">
+        <h5>List of passengers</h5>
+        <passenger-count [items]="passengerList"></passenger-count>
+        <passenger-detail
+          *ngFor="let passenger of passengerList"
+          [detail]="passenger"
+          (delete)="onDelete($event)"
+          (update)="onUpdate($event)"
+          (view)="onView($event)"
+          >
+        </passenger-detail>
+      </div>
+    </div>
+  </div>

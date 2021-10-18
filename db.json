@@ -1,0 +1,39 @@
+{
+  "passengers": [
+    {
+      "id": 1,
+      "name": "Vimal Thapliyal",
+      "status": false,
+      "bookedDate": 1634557142752,
+      "baggage": "none"
+    },
+    {
+      "id": 2,
+      "name": "Ritesh Kumar",
+      "status": true,
+      "bookedDate": 1634557280719,
+      "baggage": "hold-baggage"
+    },
+    {
+      "id": 3,
+      "name": "Rajiv Yadav",
+      "status": true,
+      "bookedDate": 1234534096769,
+      "baggage": "none"
+    },
+    {
+      "id": 4,
+      "name": "Dheeraj Sharma",
+      "status": true,
+      "bookedDate": 1634557305059,
+      "baggage": "none"
+    },
+    {
+      "id": 5,
+      "name": "Sneha Issar",
+      "status": true,
+      "bookedDate": 1644534096769,
+      "baggage": "none"
+    }
+  ]
+}

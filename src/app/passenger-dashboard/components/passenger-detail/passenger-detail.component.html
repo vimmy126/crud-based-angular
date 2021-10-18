@@ -1,0 +1,19 @@
+<ul class="list-group">
+    <li class="list-group-item">
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+                <div [class.active]="detail?.status" class="status me-2"></div>
+                <div>
+                    <div class="d-flex align-items-center">
+                        <span>{{ detail?.name }}</span>
+                        <span class="d-flex align-items-center"><input type="text" #fullname (input)="updateName(fullname.value)"  *ngIf="editing" class="form-control mx-2 form-control-sm" [value]="detail?.name" /> <a href="#"   (click)="toggleEditing($event)" class="me-2 mx-2 ">{{ editing ? 'Done' : 'Edit' }}</a></span>
+                    </div>
+                <span class="text-muted">Booked at: {{ detail?.bookedDate | date }}</span></div>
+            </div>
+            <div class="actionButtons">
+                <button class="btn btn-sm btn-outline-primary me-2" (click)="goToView()">View</button>                
+                <button class="btn btn-sm btn-outline-danger" (click)="handleDelete()">Delete</button>
+            </div>
+        </div>
+    </li>
+</ul>
